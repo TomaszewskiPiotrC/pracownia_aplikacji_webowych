@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Kontakt</title>
+</head>
+<body>
+<header>
+    <a href="/">Strona główna</a>
+    <a href="/o-nas">O nas</a>
+    <a href="/oferta">Oferta</a>
+    <a href="/kontakt">Kontakt</a>
+</header>
+<main>
+    <h1>Kontakt</h1>
+    <form method="post" action="/kontakt">
+        <input type="text" name="name" placeholder="Imię" required>
+        <input type="text" name="surname" placeholder="Nazwisko" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Treść wiadomości" required></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+    </form>
+</main>
+<footer>Piotr Tomaszewski 4C</footer>
+</body>
+</html>
