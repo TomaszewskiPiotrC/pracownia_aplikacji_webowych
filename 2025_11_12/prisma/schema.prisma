@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id         Int         @id @default(autoincrement())
+  title      String
+  content    String
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  published  Boolean     @default(false)
+  category   Kategoria   @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  comments   Komentarz[]
+}
+
+model Kategoria {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  posts       Post[]
+}
+
+model Komentarz {
+  id         Int      @id @default(autoincrement())
+  author     String
+  content    String
+  createdAt  DateTime @default(now())
+  modifiedAt DateTime @default(now())
+  post       Post     @relation(fields: [postId], references: [id])
+  postId     Int
+}
