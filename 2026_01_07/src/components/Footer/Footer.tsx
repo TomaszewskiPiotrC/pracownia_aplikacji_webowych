@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer className={styles.Footer}>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet</p>
             </footer>
         </>
     )
