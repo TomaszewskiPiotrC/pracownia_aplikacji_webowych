@@ -1,0 +1,24 @@
+.Nav {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+
+  a {
+    font-size: 2rem;
+    color: #555;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #000;
+      background: #555;
+      border-radius: 3px;
+    }
+
+    &.active {
+      color: #eee;
+      background: #333;
+    }
+  }
+}
