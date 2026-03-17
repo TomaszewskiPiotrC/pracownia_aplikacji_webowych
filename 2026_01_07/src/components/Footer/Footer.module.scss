@@ -1,11 +1,13 @@
 .Footer {
-  margin-top: 120px;
-  padding-top: 20px;
+  background-color: #1a1a1a;
+  margin-top: 80px;
+  padding: 30px 20px;
   text-align: center;
+  border-top: 1px solid #333;
 
   p {
-    font-size: 2rem;
-    color: #555;
+    font-size: 1.8rem;
+    color: #ccc;
     margin: 0;
   }
 }

@@ -1,12 +1,15 @@
 .Header {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
   h1 {
-    font-size: 5rem;
-    color: #eee;
+    font-size: 4.5rem;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     font-weight: 400;
+    letter-spacing: 1px;
   }
 }
